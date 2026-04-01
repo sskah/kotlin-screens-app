@@ -30,9 +30,11 @@ composable(route = "perfil/{nome}") {
     val nome: String? = it.arguments?.getString("nome", "Usuário Genérico")
     PerfilScreen(modifier = Modifier.padding(innerPadding), navController, nome!!)
 }
-
+```
+```kotlin id="yq8h1c"
 onClick = { navController.navigate("perfil/Fulano de Tal") }
-
+```
+```kotlin id="yq8h1c"
 fun PerfilScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
@@ -63,13 +65,15 @@ composable(
         it.arguments?.getString("cliente")
     )
 }
-
+```
+```kotlin id="n0k4tz"
 fun PedidosScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     cliente: String?
 )
-
+```
+```kotlin id="n0k4tz"
 text = "PEDIDOS - $cliente"
 ```
 
@@ -111,9 +115,11 @@ composable(
         idade!!
     )
 }
-
+```
+```kotlin id="n0k4tz"
 onClick = { navController.navigate("perfil/Fulano de Tal/27") }
-
+```
+```kotlin id="n0k4tz"
 fun PerfilScreen(
     modifier: Modifier,
     navController: NavController,
